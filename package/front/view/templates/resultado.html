@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Converge Educação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://unisatc.com.br/wp-content/uploads/2020/07/cropped-satc-fav-icon-32x32.png"
+          type="image/x-icon">
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/base.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/globalize.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/select2.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/lodash.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/accounting.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-mask-plugin.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/module.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/browser.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/utils.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/messages.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/tabs.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/timepicker.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/date.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/calendar.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/modal.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/popover.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', path='js/main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="loading" style="display: block; margin-left: auto; margin-right: auto">
+    <img src="https://media0.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif"
+         style="display: block; margin-left: auto; margin-right: auto; width:250px;height:250px;"/>
+</div>
+<div id="conteudo" style="display: none" class="container-fluid">
+    <header>
+        <div class="bth-logo bth-logo--brand-custom">
+            <div class="imagemDeFundo"></div>
+        </div>
+    </header>
+    <content>
+        <div id="cronograma" class="container container-page">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="page-title text-center">Perfil de aderência</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form method="GET" ction="{{ url_for('home') }}">
+                        <div class="row bottom">
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <div class="col-md-4" style="display: block;">
+                                        <img src="../static/img/diagrama.png"
+                                             style="display: block; margin-left: auto; margin-right: auto; width:300px;height:300px;"/>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <h5
+                                                    type="text"
+                                                    name="nome">VOCÊ TEM PERFIL</h5>
+                                            <h4 id="perfil"
+                                                type="text"
+                                                name="nome">Estratégico</h4>
+                                        </div>
+                                        <div class="row">
+                                            <p class="col-md-8" style="white-space: normal">
+                                                Muitas empresas tem procurado um profissional como você, capaz de fazer
+                                                comparações e definir a melhor estratégia para chegar ao resultado
+                                                desejado.
+                                                Ah, suas habilidades podem se encaixar muito bem em cursos como
+                                                Marketing,
+                                                Administração, Gestão comercial, Engenharia Civil, Gestão Pública e
+                                                similares. A boa notícia é que são profissões com um número interessante
+                                                de
+                                                vagas e que ainda permitem o crescimento profissional. Isso devido a
+                                                grande
+                                                variedade de níveis hierárquicos nas empresas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <h5 class="col-md-12 text-center">Baseado no seu perfil possuimos algumas sugestões de
+                                        cursos:</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="card">
+                                    <a href="https://unisatc.com.br/graduacao/design/">
+                                        <img src="../static/img/01.png" class="card-img-top" alt="">
+                                    </a>
+                                    <a href="https://unisatc.com.br/graduacao/administracao/">
+                                        <img src="../static/img/02.png" class="card-img-top" alt="">
+                                    </a>
+                                    <a href="https://unisatc.com.br/graduacao/jornalismo/">
+                                        <img src="../static/img/03.png" class="card-img-top" alt="">
+                                    </a>
+                                    <a href="https://unisatc.com.br/graduacao/publicidade-e-propaganda/">
+                                        <img src="../static/img/04.png" class="card-img-top" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <fieldset>
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Voltar
+                                </button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </content>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Converge Educação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://unisatc.com.br/wp-content/uploads/2020/07/cropped-satc-fav-icon-32x32.png"
+          type="image/x-icon">
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/base.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/globalize.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/select2.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/lodash.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/accounting.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-mask-plugin.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/module.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/browser.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/utils.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/messages.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/tabs.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/timepicker.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/date.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/calendar.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/modal.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/popover.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', path='js/main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="bth-logo bth-logo--brand-custom">
+            <div class="imagemDeFundo"></div>
+        </div>
+    </header>
+    <content>
+        <div id="cronograma" class="container container-page">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="page-title">Faça o teste vocacional e descubra o seu maior talento:</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{{ url_for('teste_vocacional') }}">
+                        <div class="row bottom">
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <div class="col-md-12">Nome completo</div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input id="inputNome"
+                                                   type="text"
+                                                   name="nome"
+                                                   class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <div class="col-md-12">Idade</div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input id="inputIdade"
+                                                   type="number"
+                                                   name="idade"
+                                                   class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <div class="col-md-12">Cidade natal </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input id="inputCidade"
+                                                   type="text"
+                                                   name="cidade"
+                                                   class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom dropdown-header">
+                                    <div class="col-md-12">Data de nascimento</div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input id="inputDataNascimento"
+                                                   type="date"
+                                                   name="datanascimento"
+                                                   class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Penso, logo existo'. Você gosta de questionar o mundo, as
+                                        pessoas, e tudo que está ao seu redor?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label=" Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Você adora conhecer as estruturas moleculares das
+                                        substâncias, saber como ocorrem as reações químicas e fazer experimentos
+                                        práticos em laboratório?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label=" Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Entrar numa biblioteca é para você algo muito prazeroso?
+                                        Conhecer as estruturas das frases, escrever textos, poemas, ler clássicos da
+                                        literatura e ainda ensinar isso para outras pessoas?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label="Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Quando você vê um mapa sente que é disso que você gosta?
+                                        Entender os aspectos sociais e políticos do mundo, mas também como nosso planeta
+                                        se formou, as placas tectônicas e tudo mais?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label="Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Entender as diversas forças existentes no Universo, como a
+                                        gravidade, além de estudar aceleração, velocidade, eletricidade e magnetismo
+                                        chamam a sua atenção?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label="Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row bottom ">
+                                    <div class="col-md-12">Entender as diversas forças existentes no Universo, como a
+                                        gravidade, além de estudar aceleração, velocidade, eletricidade e magnetismo
+                                        chamam a sua atenção?
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <select class="form-control" aria-label="Default select example">
+                                                <option value="1">Sim</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <fieldset>
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Testar
+                                </button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </content>
+</div>
+
+</body>
+
+</html>
