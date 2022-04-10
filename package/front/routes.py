@@ -25,4 +25,12 @@ def start_routes():
     async def teste_vocacional(request: Request):
         return templates.TemplateResponse("resultado.html", {"request": request})
 
+    @app.get("/painel_leads", response_class=HTMLResponse)
+    async def home(request: Request):
+        return templates.TemplateResponse("painel_leads.html", {"request": request})
+
+    @app.get("/resumo_aluno", response_class=HTMLResponse)
+    async def home(request: Request):
+        return templates.TemplateResponse("resumo_aluno.html", {"request": request})
+
     return app

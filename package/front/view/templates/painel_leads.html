@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Converge Educação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://unisatc.com.br/wp-content/uploads/2020/07/cropped-satc-fav-icon-32x32.png"
+          type="image/x-icon">
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/base.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/globalize.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/select2.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/lodash.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/accounting.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/jquery-mask-plugin.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/module.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/browser.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/utils.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/messages.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/tabs.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/timepicker.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/date.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/calendar.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/modal.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/front-end/2.13/js/popover.js"></script>
+    <script src="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', path='js/main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.betha.cloud/base/g4/design/3.11.9/bth-design.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div id="conteudo" class="container-fluid">
+    <header>
+        <div class="bth-logo bth-logo--brand-custom">
+            <div class="imagemDeFundo"></div>
+        </div>
+    </header>
+    <content>
+        <div id="cronograma" class="container container-page">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="page-title text-center">Resumo dos testes realizados</h3>
+                    </div>
+                </div>
+                <div class="modal-body" >
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <a href="./resumo_aluno"><button class="btn btn-primary info" style="align: left">+</button></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Anmer Machado</p>
+                            <p class="col-md-4">Data de inclusão: 03/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Jessica Espindola da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Mário Florense Gonçalves Lô</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Jose Mario</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Lucas Mario</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Jorge Mario</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Mario Luidi</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Paulo Anmer</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Telmo Valencio</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Cassio Costa</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-2">
+                            <img style="with: 70px; height: 70px;" src="https://naic.com.br/wp-content/uploads/2020/07/blank-profile-picture-973460_960_720.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="align: left">
+
+                            <p class="col-md-4" >Alessandro Paz da Silva</p>
+                            <p class="col-md-4">Data de inclusão: 09/04/2022</p>
+                            <button class="btn btn-primary info" style="align: left">+</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </content>
+</div>
+
+</body>
+
+</html>
